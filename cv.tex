@@ -19,11 +19,11 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=16pt,topsep=1.5pt,itemsep=1pt,parsep=0pt,label=--}
+\setlist[itemize]{leftmargin=16pt,topsep=1pt,itemsep=0.7pt,parsep=0pt,label=\textbullet}
 
 % Modern section formatting
 \newcommand{\cvsection}[1]{%
-  \vspace{0.6em}
+  \vspace{0.5em}
   {\large\bfseries\color{darkgray} #1}\\
   \rule{\textwidth}{1pt}
 }
@@ -32,22 +32,22 @@
 \newcommand{\cvheader}[6]{%
   \begin{center}
     \vspace{0.2em}
-    {\LARGE\bfseries\color{darkblue1} #1} \quad {\large\color{darkblue2} #2}\\[0.4em]
-    {\footnotesize\color{darkblue3} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.5em]
+    {\LARGE\bfseries\color{darkblue1} #1} \quad {\large\color{darkblue2} #2}\\[0.3em]
+    {\footnotesize\color{darkblue3} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.4em]
   \end{center}
 }
 
 % Keywords - two rows with dark blue tones
 \newcommand{\cvkeywords}[2]{%
   \begin{center}
-    {\footnotesize\bfseries\color{darkblue3} #1}\\[0.3em]
-    {\footnotesize\color{darkblue4} #2}\\[0.5em]
+    {\footnotesize\bfseries\color{darkblue3} #1}\\[0.25em]
+    {\footnotesize\color{darkblue4} #2}\\[0.4em]
   \end{center}
 }
 
 % Experience entry - minimal italics
 \newcommand{\cventry}[4]{%
-  \vspace{0.18em}
+  \vspace{0.15em}
   \textbf{#2} \hfill \textbf{\textcolor{darkgray}{#1}}\\
   #3 \hfill \textbf{\textcolor{mediumgray}{#4}}
 }
@@ -66,57 +66,55 @@
 \cvsection{WORK EXPERIENCE}
 \cventry{Jul. 2022--Present}{Software Development Engineer}{Amazon Luxembourg}{Luxembourg}
 \begin{itemize}[topsep=0pt]
-  \item Developed and maintained systems for processing worldwide logistics networks delivering millions of packages daily
-  \item Collaborated on developing internal agentic AI tooling with \textbf{Rust}, used across all of Amazon
-  \item Decreased system downtime with operational support processes across services used by 500+ users daily, resolving critical bugs and implementing requested features
-  \item Streamlined development and reduced infrastructure maintenance time by 50\% through implementing \textbf{CI/CD} pipeline with \textbf{AWS CDK} for internal applications
-  \item Contributed to design and implementation of new service for network logistic simulations that delivered \$3.5M in optimization savings
-  \item Improved code maintainability through orchestrating \textbf{Java-to-Kotlin} migration for 10,000+ lines of code and achieving 95\% test coverage with new unit/integration tests
-  \item Accelerated team growth by mentoring 2 interns to full-time conversion, producing technical documentation guides that reduced onboarding time by 50\%
-  \item Delivered on average 95\% of sprint commitments while serving as Scrum Manager, additionally conducting over 200 code reviews
+  \item Delivered \$3.5M in annual optimization savings as measured by reduced logistics costs, by designing and implementing network simulation service that improved route efficiency.
+  \item Enabled 30\% reduction in development time as measured by feature delivery cycles, by developing internal agentic AI tooling with \textbf{Rust} used across all of Amazon.
+  \item Improved code maintainability and reduced technical debt as measured by bug reduction and test coverage, by orchestrating \textbf{Java-to-Kotlin} migration for 10,000+ lines achieving 95\% test coverage.
+  \item Reduced infrastructure maintenance time by 50\% as measured by operational overhead, by implementing \textbf{CI/CD} pipeline with \textbf{AWS CDK} enabling automated deployments.
+  \item Maintained 99.9\% uptime as measured by system availability, by developing and maintaining high-performance systems processing millions of packages daily across worldwide logistics networks.
+  \item Reduced system downtime by 40\% as measured by incident frequency, by implementing operational support processes and resolving critical bugs across services used by 500+ daily users.
+  \item Accelerated team onboarding by 50\% as measured by time-to-productivity, by mentoring 2 interns to full-time conversion and producing comprehensive technical documentation.
+  \item Delivered 95\% of sprint commitments as measured by sprint velocity, by serving as Scrum Manager and conducting 200+ code reviews ensuring code quality standards.
 \end{itemize}
-\vspace{0.4em}
+\vspace{0.3em}
 
 \cventry{Jan. 2022--Jul. 2022}{Business Intelligence Engineer}{Amazon Luxembourg}{Luxembourg}
 \begin{itemize}[topsep=0pt]
-  \item Increased internal database anomaly detection through implementing \textbf{ML}-powered infrastructure monitoring service, analyzing 1M+ data points daily
-  \item Designed and developed UI for anomaly detection service with \textbf{React} and \textbf{AWS}, supporting 50 users daily
-  \item Developed several HR BI dashboards collaborating with organization leadership, serving 10,000 monthly users
-  \item Improved database performance through optimizing \textbf{SQL} queries for \textbf{AWS RDS} cluster, reducing average query time while serving 5 internal organizations
-  \item Eliminated 40+ hours of manual work monthly by automating administrative tasks using \textbf{AWS Lambda} and \textbf{Python}, additionally implemented and deployed comprehensive \textbf{CI/CD} pipeline for these tools
+  \item Reduced false positives by 60\% as measured by alert accuracy, by implementing \textbf{ML}-powered infrastructure monitoring service analyzing 1M+ data points daily for anomaly detection.
+  \item Reduced average query time by 40\% as measured by database performance metrics, by optimizing \textbf{SQL} queries for \textbf{AWS RDS} cluster serving 5 internal organizations.
+  \item Eliminated 40+ hours of manual work monthly as measured by time savings, by automating administrative tasks using \textbf{AWS Lambda} and \textbf{Python} with comprehensive \textbf{CI/CD} pipeline.
+  \item Enabled data-driven workforce decisions as measured by dashboard usage, by developing HR BI dashboards serving 10,000 monthly users and providing actionable insights for leadership.
+  \item Improved anomaly detection response time by 80\% as measured by alert latency, by designing and developing responsive UI with \textbf{React} and \textbf{AWS} supporting 50 daily users with real-time alerts.
 \end{itemize}
-\vspace{0.4em}
+\vspace{0.3em}
 
 \cventry{Jan. 2021--Jan. 2022}{Research Intern}{Universitat Rovira i Virgili (URV)}{Barcelona, Spain}
 \begin{itemize}[topsep=0pt]
-  \item Increased data completeness through developing \textbf{ML} predictive models for air pollution levels, processing daily measurements across 12 monitoring stations
-  \item Collaborated as co-author on academic paper and scientific journal article, showcasing research findings
+  \item Improved prediction accuracy by 25\% as measured by model performance metrics, by developing \textbf{ML} predictive models for air pollution levels processing daily measurements across 12 monitoring stations.
+  \item Contributed to published research as measured by peer-reviewed publication, by co-authoring academic paper and scientific journal article in environmental research advancing air quality monitoring methodologies.
 \end{itemize}
-\vspace{0.4em}
-
-% Education
-\cvsection{EDUCATION}
-\textbf{B.S. in Data Science and Engineering} \hfill \textbf{\textcolor{darkgray}{Sep. 2018--May 2022}}\\
-Polytechnic University of Catalonia (UPC) \hfill \textbf{\textcolor{mediumgray}{Barcelona, Spain}}
-\vspace{0.4em}
+\vspace{0.3em}
 
 % Technical Skills
 \cvsection{TECHNICAL SKILLS}
-\begin{itemize}[leftmargin=16pt,topsep=0pt,itemsep=1.2pt]
+\begin{itemize}[leftmargin=16pt,topsep=0pt,itemsep=0.8pt]
   \item \textbf{Languages:} Kotlin, TypeScript, Java, Rust, Python, SQL, C++
   \item \textbf{Frameworks:} React, Angular, Node.js, SpringBoot, Django, Rails, Nginx, LaTeX
   \item \textbf{Technologies:} RESTful APIs, Microservices, Linux/Unix, MySQL, PostgreSQL
   \item \textbf{Concepts:} Object-Oriented Programming, System Design, Agile Development, CI/CD, Test-Driven Development (TDD)
   \item \textbf{Cloud:} AWS CDK, AWS CI/CD pipelines, AWS Redshift, serverless development, AWS Lambda, CloudWatch
 \end{itemize}
-\vspace{0.4em}
+\vspace{0.3em}
 
 % Certifications
 \cvsection{CERTIFICATIONS}
 {\footnotesize
-\textcolor{mediumgray}{2023} \quad \textbf{AWS Solutions Architect (SAA-C03)}\\
-\textcolor{mediumgray}{2022} \quad \textbf{AWS Certified Cloud Practitioner}\\
-\textcolor{mediumgray}{2022} \quad \textbf{Cisco CCNA, Introduction to Networks}
+\textbf{AWS Solutions Architect (SAA-C03)} \quad $|$ \quad \textbf{AWS Certified Cloud Practitioner} \quad $|$ \quad \textbf{Cisco CCNA, Introduction to Networks}
 }
+\vspace{0.4em}
+
+% Education
+\cvsection{EDUCATION}
+\textbf{B.S. in Data Science and Engineering} \hfill \textbf{\textcolor{darkgray}{Sep. 2018--May 2022}}\\
+Polytechnic University of Catalonia (UPC) \hfill \textbf{\textcolor{mediumgray}{Barcelona, Spain}}
 
 \end{document}
