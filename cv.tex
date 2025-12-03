@@ -19,11 +19,11 @@
 \pagestyle{empty}
 \setlength{\parindent}{0pt}
 \setlength{\parskip}{0pt}
-\setlist[itemize]{leftmargin=16pt,topsep=1pt,itemsep=0.7pt,parsep=0pt,label=\textbullet}
+\setlist[itemize]{leftmargin=16pt,topsep=0.8pt,itemsep=0.5pt,parsep=0pt,label=\textbullet}
 
 % Modern section formatting
 \newcommand{\cvsection}[1]{%
-  \vspace{0.5em}
+  \vspace{1em}
   {\large\bfseries\color{darkgray} #1}\\
   \rule{\textwidth}{1pt}
 }
@@ -32,8 +32,8 @@
 \newcommand{\cvheader}[6]{%
   \begin{center}
     \vspace{0.2em}
-    {\LARGE\bfseries\color{darkblue1} #1} \quad {\large\color{darkblue2} #2}\\[0.3em]
-    {\footnotesize\color{darkblue3} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.4em]
+    {\LARGE\bfseries\color{darkblue1} #1} \quad {\large\color{darkblue2} #2}\\[0.25em]
+    {\footnotesize\color{darkblue3} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.6em]
   \end{center}
 }
 
@@ -47,7 +47,7 @@
 
 % Experience entry - minimal italics
 \newcommand{\cventry}[4]{%
-  \vspace{0.15em}
+  \vspace{0.12em}
   \textbf{#2} \hfill \textbf{\textcolor{darkgray}{#1}}\\
   #3 \hfill \textbf{\textcolor{mediumgray}{#4}}
 }
@@ -58,9 +58,6 @@
 \cvheader{Marc Vernet}{SOFTWARE ENGINEER}
   {(+34) 650117126}{mrcvs31@gmail.com}{marc-vernet.me}
   {github.com/marcvernet31 \quad $|$ \quad linkedin.com/in/marc-vernet}
-
-\cvkeywords{Software Engineering • Full Stack Development • Cloud Solutions • Machine Learning • DevOps}
-{AWS • Kotlin • Python • React • Rust • CI/CD • ML/AI • Distributed Systems}
 
 % Experience
 \cvsection{WORK EXPERIENCE}
@@ -74,8 +71,9 @@
   \item Reduced system downtime by 40\% as measured by incident frequency, by implementing operational support processes and resolving critical bugs across services used by 500+ daily users.
   \item Accelerated team onboarding by 50\% as measured by time-to-productivity, by mentoring 2 interns to full-time conversion and producing comprehensive technical documentation.
   \item Delivered 95\% of sprint commitments as measured by sprint velocity, by serving as Scrum Manager and conducting 200+ code reviews ensuring code quality standards.
+  \item Reduced system latency by 35\% as measured by p99 response times, by implementing distributed caching layer using \textbf{Redis} and optimizing data access patterns across \textbf{microservices} architecture.
 \end{itemize}
-\vspace{0.3em}
+\vspace{0.25em}
 
 \cventry{Jan. 2022--Jul. 2022}{Business Intelligence Engineer}{Amazon Luxembourg}{Luxembourg}
 \begin{itemize}[topsep=0pt]
@@ -85,25 +83,25 @@
   \item Enabled data-driven workforce decisions as measured by dashboard usage, by developing HR BI dashboards serving 10,000 monthly users and providing actionable insights for leadership.
   \item Improved anomaly detection response time by 80\% as measured by alert latency, by designing and developing responsive UI with \textbf{React} and \textbf{AWS} supporting 50 daily users with real-time alerts.
 \end{itemize}
-\vspace{0.3em}
+\vspace{0.25em}
 
 \cventry{Jan. 2021--Jan. 2022}{Research Intern}{Universitat Rovira i Virgili (URV)}{Barcelona, Spain}
 \begin{itemize}[topsep=0pt]
   \item Improved prediction accuracy by 25\% as measured by model performance metrics, by developing \textbf{ML} predictive models for air pollution levels processing daily measurements across 12 monitoring stations.
   \item Contributed to published research as measured by peer-reviewed publication, by co-authoring academic paper and scientific journal article in environmental research advancing air quality monitoring methodologies.
 \end{itemize}
-\vspace{0.3em}
+\vspace{0.25em}
 
 % Technical Skills
 \cvsection{TECHNICAL SKILLS}
-\begin{itemize}[leftmargin=16pt,topsep=0pt,itemsep=0.8pt]
+\begin{itemize}[leftmargin=16pt,topsep=0pt,itemsep=0.6pt]
   \item \textbf{Languages:} Kotlin, TypeScript, Java, Rust, Python, SQL, C++
   \item \textbf{Frameworks:} React, Angular, Node.js, SpringBoot, Django, Rails, Nginx, LaTeX
   \item \textbf{Technologies:} RESTful APIs, Microservices, Linux/Unix, MySQL, PostgreSQL
-  \item \textbf{Concepts:} Object-Oriented Programming, System Design, Agile Development, CI/CD, Test-Driven Development (TDD)
+  \item \textbf{Software Engineering:} System Design, CI/CD, DevOps, Test-Driven Development (TDD), Agile/Scrum
   \item \textbf{Cloud:} AWS CDK, AWS CI/CD pipelines, AWS Redshift, serverless development, AWS Lambda, CloudWatch
 \end{itemize}
-\vspace{0.3em}
+\vspace{0.25em}
 
 % Certifications
 \cvsection{CERTIFICATIONS}
@@ -113,8 +111,11 @@
 \vspace{0.4em}
 
 % Education
-\cvsection{EDUCATION}
+\vspace{0.5em}
+{\large\bfseries\color{darkgray} EDUCATION}\\
+\rule{\textwidth}{1pt}
 \textbf{B.S. in Data Science and Engineering} \hfill \textbf{\textcolor{darkgray}{Sep. 2018--May 2022}}\\
 Polytechnic University of Catalonia (UPC) \hfill \textbf{\textcolor{mediumgray}{Barcelona, Spain}}
+\vspace{0.2em}
 
 \end{document}
