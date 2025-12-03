@@ -6,10 +6,14 @@
 \usepackage{enumitem}
 \usepackage{xcolor}
 
-% Colors - modern dark gray/charcoal scheme
+% Colors - modern dark gray/charcoal scheme with dark blue accents
 \definecolor{darkgray}{RGB}{45,45,45}
 \definecolor{mediumgray}{RGB}{100,100,100}
 \definecolor{lightgray}{RGB}{150,150,150}
+\definecolor{darkblue1}{RGB}{20,50,80}
+\definecolor{darkblue2}{RGB}{30,60,95}
+\definecolor{darkblue3}{RGB}{40,70,110}
+\definecolor{darkblue4}{RGB}{50,80,120}
 
 % Custom formatting
 \pagestyle{empty}
@@ -24,20 +28,20 @@
   \rule{\textwidth}{1pt}
 }
 
-% Professional header design - centered
+% Professional header design - centered with dark blue accents
 \newcommand{\cvheader}[6]{%
   \begin{center}
     \vspace{0.2em}
-    {\LARGE\bfseries\color{darkgray} #1} \quad {\large\color{mediumgray} #2}\\[0.4em]
-    {\footnotesize\color{lightgray} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.5em]
+    {\LARGE\bfseries\color{darkblue1} #1} \quad {\large\color{darkblue2} #2}\\[0.4em]
+    {\footnotesize\color{darkblue3} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.5em]
   \end{center}
 }
 
-% Keywords - two rows, first bold
+% Keywords - two rows with dark blue tones
 \newcommand{\cvkeywords}[2]{%
   \begin{center}
-    {\footnotesize\bfseries\color{mediumgray} #1}\\[0.3em]
-    {\footnotesize\color{mediumgray} #2}\\[0.5em]
+    {\footnotesize\bfseries\color{darkblue3} #1}\\[0.3em]
+    {\footnotesize\color{darkblue4} #2}\\[0.5em]
   \end{center}
 }
 
