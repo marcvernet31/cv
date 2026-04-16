@@ -1,0 +1,13 @@
+# LaTeX build artifacts
+*.aux
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.out
+
+# Built PDFs (output directory)
+dist/
+
+# macOS
+.DS_Store

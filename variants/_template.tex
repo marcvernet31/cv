@@ -1,0 +1,53 @@
+% ─── CV VARIANT TEMPLATE ─────────────────────────────────────────────────────
+% Copy this file to variants/<role>-<emphasis>.tex to create a new variant.
+% Naming convention: sde-backend, sde-ml, sde-startup, pm-technical, etc.
+%
+% Workflow:
+%   1. Decide which experience entries to include (all roles, or a subset)
+%   2. For each entry, choose to \input the full content file OR paste a
+%      hand-picked subset of bullets directly here
+%   3. Reorder / rewrite the skills block to match the target job's keywords
+%   4. Build with: ./scripts/build.sh <variant-name>
+
+\documentclass[10pt,a4paper]{article}
+\input{base/preamble}
+
+\begin{document}
+
+% ─── HEADER ──────────────────────────────────────────────────────────────────
+\input{base/header}
+% Optional: override the title line in header.tex by defining it inline instead:
+% \cvheader{Marc Vernet}{MACHINE LEARNING ENGINEER}{...}
+
+% Optional: keyword block for ATS-heavy roles
+% \cvkeywords
+%   {Distributed Systems · Microservices · Kotlin · Rust · AWS · CI/CD · System Design}
+%   {Python · Machine Learning · Data Pipelines · PostgreSQL · Redis · Docker}
+
+% ─── WORK EXPERIENCE ─────────────────────────────────────────────────────────
+\cvsection{WORK EXPERIENCE}
+
+% Option A — include the full content file as-is:
+\input{content/experience/amazon-sde}
+\vspace{0.15em}
+
+% Option B — cherry-pick bullets by copying them directly here and commenting
+% out the \input above. This lets you drop or reorder bullets per variant.
+
+\input{content/experience/amazon-bi}
+\vspace{0.15em}
+
+\input{content/experience/urv-research}
+\vspace{0.15em}
+
+% ─── TECHNICAL SKILLS ────────────────────────────────────────────────────────
+% Tip: reorder items so the most relevant skills for this role appear first.
+\input{content/skills}
+
+% ─── CERTIFICATIONS ──────────────────────────────────────────────────────────
+\input{content/certifications}
+
+% ─── EDUCATION ───────────────────────────────────────────────────────────────
+\input{content/education}
+
+\end{document}

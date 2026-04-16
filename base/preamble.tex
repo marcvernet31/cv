@@ -1,0 +1,56 @@
+% ─── PREAMBLE ────────────────────────────────────────────────────────────────
+% Shared across all CV variants. Edit here to change global style.
+
+% Standard packages
+\usepackage[utf8]{inputenc}
+\usepackage[margin=0.5in]{geometry}
+\usepackage{enumitem}
+\usepackage{xcolor}
+
+% ─── Colors ──────────────────────────────────────────────────────────────────
+\definecolor{darkgray}{RGB}{45,45,45}
+\definecolor{mediumgray}{RGB}{100,100,100}
+\definecolor{lightgray}{RGB}{150,150,150}
+\definecolor{darkblue1}{RGB}{20,50,80}
+\definecolor{darkblue2}{RGB}{30,60,95}
+\definecolor{darkblue3}{RGB}{40,70,110}
+\definecolor{darkblue4}{RGB}{50,80,120}
+
+% ─── Global formatting ───────────────────────────────────────────────────────
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlist[itemize]{leftmargin=16pt,topsep=0.5pt,itemsep=0.3pt,parsep=0pt,label=\textbullet}
+
+% ─── Macros ───────────────────────────────────────────────────────────────────
+
+% Section header with horizontal rule
+\newcommand{\cvsection}[1]{%
+  \vspace{0.8em}
+  {\large\bfseries\color{darkgray} #1}\\
+  \rule{\textwidth}{1pt}
+}
+
+% Centered header: {name}{title}{phone}{email}{website}{social}
+\newcommand{\cvheader}[6]{%
+  \begin{center}
+    \vspace{0.1em}
+    {\LARGE\bfseries\color{darkblue1} #1} \quad {\large\color{darkblue2} #2}\\[0.2em]
+    {\footnotesize\color{darkblue3} #3 \quad $|$ \quad #4 \quad $|$ \quad #5 \quad $|$ \quad #6}\\[0.4em]
+  \end{center}
+}
+
+% Two-row keyword block (useful for ATS-targeted variants)
+\newcommand{\cvkeywords}[2]{%
+  \begin{center}
+    {\footnotesize\bfseries\color{darkblue3} #1}\\[0.2em]
+    {\footnotesize\color{darkblue4} #2}\\[0.3em]
+  \end{center}
+}
+
+% Experience entry: {date}{title}{company}{location}
+\newcommand{\cventry}[4]{%
+  \vspace{0.12em}
+  \textbf{#2} \hfill \textbf{\textcolor{darkgray}{#1}}\\
+  #3 \hfill \textbf{\textcolor{mediumgray}{#4}}
+}
