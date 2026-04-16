@@ -33,4 +33,12 @@ pdflatex -interaction=nonstopmode -output-directory="$OUT_DIR" "$VARIANT_FILE" >
 # Run twice to resolve references (aux files)
 pdflatex -interaction=nonstopmode -output-directory="$OUT_DIR" "$VARIANT_FILE" > /dev/null 2>&1
 
-echo "Done: dist/${VARIANT}.pdf"
+# Enforce one-page limit: parse page count from pdflatex log
+LOG="$OUT_DIR/${VARIANT}.log"
+PAGES=$(grep -o "[0-9]* page" "$LOG" | tail -1 | grep -o "[0-9]*")
+if [ "${PAGES:-1}" -gt 1 ]; then
+  echo "ERROR: ${VARIANT}.pdf is ${PAGES} pages — must be 1. Cut bullets before committing."
+  exit 1
+fi
+
+echo "Done: dist/${VARIANT}.pdf (1 page)"

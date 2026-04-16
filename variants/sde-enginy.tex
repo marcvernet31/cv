@@ -1,0 +1,44 @@
+\documentclass[10pt,a4paper]{article}
+\input{base/preamble}
+
+\begin{document}
+
+\input{base/header}
+
+% ─── WORK EXPERIENCE ─────────────────────────────────────────────────────────
+\cvsection{WORK EXPERIENCE}
+
+\input{content/experience/enginy-sde}
+\vspace{0.15em}
+
+% Amazon SDE — 4 bullets selected from content/experience/amazon-sde.tex
+\cventry{Jul. 2022--Feb. 2026}{Software Development Engineer}{Amazon Luxembourg}{Luxembourg}
+\begin{itemize}[topsep=0pt]
+  \item Reduced \$3.5M in annual logistics costs by designing and implementing network simulation service that models route optimization algorithms, analyzes real-time traffic patterns, and evaluates distribution center capacity across European fulfillment network.
+  \item Collaborated in developing internal agentic AI tooling with \textbf{Rust} that automates code generation, test writing, and documentation, used across all of Amazon's engineering teams.
+  \item Improved code maintainability by orchestrating \textbf{Java-to-Kotlin} migration for 10,000+ lines of logistics service code, implementing null-safety patterns and coroutine-based async processing with 95\% test coverage.
+  \item Reduced system latency by 35\% by implementing distributed caching layer using \textbf{Redis} and optimizing data access patterns with connection pooling across \textbf{microservices} architecture.
+\end{itemize}
+\vspace{0.15em}
+
+% Amazon BI — 2 bullets selected from content/experience/amazon-bi.tex
+\cventry{Jan. 2022--Jul. 2022}{Business Intelligence Engineer}{Amazon Luxembourg}{Luxembourg}
+\begin{itemize}[topsep=0pt]
+  \item Reduced false positives by 60\% by implementing \textbf{ML}-powered infrastructure monitoring service using time-series forecasting and anomaly detection, analyzing 1M+ data points daily from server metrics, network traffic, and application logs.
+  \item Eliminated 40+ hours of manual work monthly by automating data pipeline monitoring, report generation, and access provisioning using \textbf{AWS Lambda} and \textbf{Python} with \textbf{CI/CD} pipeline.
+\end{itemize}
+\vspace{0.15em}
+
+\input{content/experience/urv-research}
+\vspace{0.15em}
+
+% ─── TECHNICAL SKILLS ────────────────────────────────────────────────────────
+\input{content/skills}
+
+% ─── CERTIFICATIONS ──────────────────────────────────────────────────────────
+\input{content/certifications}
+
+% ─── EDUCATION ───────────────────────────────────────────────────────────────
+\input{content/education}
+
+\end{document}

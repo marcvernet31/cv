@@ -89,6 +89,10 @@ Never: "was responsible for", "helped", "assisted", "worked on", "contributed to
 If content overflows, cut bullets — do not adjust font size or margins.
 Allocation guideline: most recent role 5-7 bullets, prior roles 2-4 bullets.
 
+**Enforcement:** `build.sh` reads the pdflatex log (`dist/<variant>.log`) after each build and exits with an error if the PDF is more than 1 page. Always run the build after adding or rewriting content and verify it passes.
+
+**When adding a new role:** Before writing any bullets for the new role, calculate the budget. Count bullets in the existing roles and trim older/less relevant ones to make room. A typical allocation when 4 roles are present: current role 4-5 bullets, second role 3-4 bullets, older roles 2 bullets each.
+
 ---
 
 ## Knowledge base
