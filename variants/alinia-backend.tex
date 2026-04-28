@@ -1,0 +1,62 @@
+\documentclass[10pt,a4paper]{article}
+\input{base/preamble}
+
+\begin{document}
+
+\cvheader{Marc Vernet}{BACKEND ENGINEER}
+  {(+34) 650117126}{mrcvs31@gmail.com}{marc-vernet.me}
+  {github.com/marcvernet31 \quad $|$ \quad linkedin.com/in/marc-vernet}
+
+% ─── WORK EXPERIENCE ─────────────────────────────────────────────────────────
+\cvsection{WORK EXPERIENCE}
+
+% Enginy — RAG bullet filled with conservative metric; Chrome extension excluded (frontend)
+\cventry{Feb. 2026--Present}{Software Engineer}{Enginy}{Luxembourg}
+\begin{itemize}[topsep=0pt]
+  \item Eliminated manual prospect research by developing \textbf{Chrome Extension} in \textbf{TypeScript} that automates profile data extraction from \textbf{LinkedIn} and web sources, delivering 500+ structured lead records per day into backend enrichment pipelines.
+  \item Improved lead data quality by 25\% by designing and implementing async enrichment pipelines in \textbf{Node.js} that aggregate, validate, and merge prospect data from 10+ external sources using \textbf{PostgreSQL}.
+  \item Accelerated go-to-market tooling by building \textbf{TypeScript} integrations with CRM platforms and third-party data APIs, enabling automated multi-source lead enrichment across sales campaign workflows.
+\end{itemize}
+\vspace{0.15em}
+
+% Amazon SDE — AI tooling + CI/CD + Redis + operational health: DevOps and LLM signals
+\cventry{Jul. 2022--Feb. 2026}{Software Development Engineer}{Amazon Luxembourg}{Luxembourg}
+\begin{itemize}[topsep=0pt]
+  \item Collaborated in developing internal agentic \textbf{AI} tooling in \textbf{Rust} that automates code generation, test writing, and documentation, deployed across all of Amazon's engineering teams.
+  \item Reduced infrastructure maintenance time by 50\% by implementing \textbf{CI/CD} pipeline with \textbf{AWS CDK} (infrastructure-as-code) for automated deployments and service provisioning across \textbf{microservices} architecture.
+  \item Reduced system latency by 35\% by implementing distributed caching layer using \textbf{Redis} and optimizing data access patterns with connection pooling across \textbf{microservices} architecture.
+  \item Reduced system downtime by 40\% by implementing operational support processes, automated health checks, and resolving critical bugs across internal tooling services.
+\end{itemize}
+\vspace{0.15em}
+
+% Amazon BI — observability + Python/Lambda ops
+\cventry{Jan. 2022--Jul. 2022}{Business Intelligence Engineer}{Amazon Luxembourg}{Luxembourg}
+\begin{itemize}[topsep=0pt]
+  \item Reduced false positives by 60\% by implementing \textbf{ML}-powered infrastructure monitoring service using time-series forecasting and anomaly detection, analyzing 1M+ data points daily from server metrics, network traffic, and application logs.
+  \item Eliminated 40+ hours of manual work monthly by automating data pipeline monitoring, report generation, and access provisioning using \textbf{AWS Lambda} and \textbf{Python} with \textbf{CI/CD} pipeline.
+\end{itemize}
+\vspace{0.15em}
+
+\input{content/experience/urv-research}
+\vspace{0.15em}
+
+% ─── TECHNICAL SKILLS ────────────────────────────────────────────────────────
+% Python and backend-first ordering; Docker and IaC explicitly called out for Alinia JD
+\cvsection{TECHNICAL SKILLS}
+\begin{itemize}[leftmargin=16pt,topsep=0pt,itemsep=0.6pt]
+  \item \textbf{Languages:} Python, TypeScript, Kotlin, Java, Rust, SQL
+  \item \textbf{Frameworks \& Tools:} \textbf{FastAPI}, Node.js, SpringBoot, React, scikit-learn, \textbf{Docker}
+  \item \textbf{Technologies:} RESTful APIs, PostgreSQL, Redis, Microservices, Linux/Unix
+  \item \textbf{Cloud \& DevOps:} AWS CDK (IaC), CI/CD pipelines, AWS Lambda, AWS RDS, CloudWatch, serverless
+  \item \textbf{AI / ML:} Agentic AI tooling, prompt engineering, anomaly detection, time-series forecasting
+  \item \textbf{Engineering:} System Design, DevOps, Test-Driven Development (TDD), Agile/Scrum
+\end{itemize}
+\vspace{0.15em}
+
+% ─── CERTIFICATIONS ──────────────────────────────────────────────────────────
+\input{content/certifications}
+
+% ─── EDUCATION ───────────────────────────────────────────────────────────────
+\input{content/education}
+
+\end{document}

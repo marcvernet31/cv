@@ -24,10 +24,11 @@ Claude should draw from this when tailoring the skills section for a specific va
 
 | Framework/Lib | Context |
 |---------------|---------|
+| FastAPI       | Enginy — backend API layer for LLM/RAG pipelines |
 | SpringBoot    | Amazon backend services |
 | React         | Amazon monitoring UI, internal dashboards |
 | Angular       | <!-- TODO: where was this used? --> |
-| Node.js       | <!-- TODO: where was this used? --> |
+| Node.js       | Enginy — async enrichment pipelines |
 | Django        | <!-- TODO: personal projects? coursework? --> |
 | Rails         | <!-- TODO: where was this used? --> |
 | Nginx         | <!-- TODO: ops/infra work? --> |
@@ -79,6 +80,21 @@ Claude should draw from this when tailoring the skills section for a specific va
 | Agile/Scrum  | Standard Amazon team process |
 <!-- TODO: Code review culture — do you lead reviews on your team? -->
 <!-- TODO: Any experience with oncall / incident response? -->
+
+---
+
+## AI / LLM
+
+| Skill | Context |
+|-------|---------|
+| RAG pipelines | Enginy — implemented retrieval-augmented generation pipelines in Python + FastAPI |
+| LLM integration | Enginy (RAG/pipelines) + Amazon (agentic AI tooling interfacing with LLMs in Rust) |
+| Prompt engineering | Enginy LLM pipeline work |
+| Agentic AI | Amazon — internal tooling for code generation, test writing, documentation |
+| Anomaly detection / time-series forecasting | Amazon BI — ML-powered infrastructure monitoring |
+| Ensemble methods (random forests, gradient boosting) | URV ML research — air quality prediction |
+<!-- TODO: Specific LLM providers used at Enginy? OpenAI, Anthropic, open-source (Llama, Mistral)? -->
+<!-- TODO: Any vector database used? Pinecone, Weaviate, FAISS, pgvector? -->
 
 ---
 

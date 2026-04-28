@@ -4,6 +4,37 @@ This file captures context beyond what fits on the CV. Use it when generating or
 
 ---
 
+## Enginy — Software Engineer
+**Feb 2026 – Present**
+
+### Context
+Enginy is an early-stage AI company (marc.vernet@enginy.ai). High ownership, founding-team context.
+
+### Tech Stack in Use
+Python, FastAPI, TypeScript, Node.js, PostgreSQL
+
+### Key Projects & Contributions
+
+**RAG / LLM Pipelines (Python + FastAPI)**
+- Built RAG pipelines and LLM-powered features in Python + FastAPI
+<!-- TODO: What is the primary use case? (e.g., querying over prospect/company data, document Q&A, lead qualification?) -->
+<!-- TODO: Which LLM providers? OpenAI, Anthropic, open-source (Llama, Mistral)? -->
+<!-- TODO: Any vector database? (Pinecone, Weaviate, FAISS, pgvector?) -->
+<!-- TODO: Metric — what improved as a result? (accuracy, time saved, % reduction in something?) -->
+
+**Async Enrichment Pipelines (Node.js + PostgreSQL)**
+- Aggregates and merges prospect data from 10+ external sources
+- 25% improvement in lead data quality
+
+**Chrome Extension + Web Scraping (TypeScript)**
+- Automates profile data extraction from LinkedIn and web sources
+- 500+ structured lead records per day into backend pipelines
+
+**CRM / Third-party API Integrations (TypeScript)**
+- Integrations with CRM platforms and data APIs for multi-source lead enrichment
+
+---
+
 ## Amazon Luxembourg — Software Development Engineer
 **Jul 2022 – Present**
 
